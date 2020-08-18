@@ -1,0 +1,56 @@
+
+.NavigationItom{
+    margin:20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    
+}
+
+.NavigationItom a {
+  
+    text-decoration: none;
+    text-align: center;
+    color: rgb(42, 71, 28);
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.NavigationItom a:hover,
+.NavigationItom :active,
+.NavigationItom a.active{
+    background-color: rgb(33, 152, 221);
+    border-bottom: solid blue;
+}
+
+@media(min-width:500px)
+{
+    .NavigationItom{
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        
+    }
+    
+    .NavigationItom a {
+        padding: 16px 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+        width: auto;
+        border-radius: 10px;
+    }
+    
+    .NavigationItom a:hover,
+    .NavigationItom :active,
+    .NavigationItom a.active{
+        background-color: rgb(131, 172, 21);
+        border-bottom: solid blue;
+    }
+}

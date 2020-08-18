@@ -1,0 +1,21 @@
+.NavigationItoms{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+@media(min-width:500px)
+{
+    .NavigationItoms{
+        flex-flow: row;
+        width: 100%;
+        
+    } 
+}
+
