@@ -3,9 +3,20 @@
     height: auto;
     padding: 10px;
     margin: 5px auto;
-    border: 5px bold #dacfcf;
+    border-style: solid;
+    border-color:gray;
+    border-width: thin;
     box-sizing: border-box;
-    box-shadow: 2px 3px 1px rgb(2, 2, 2);
-    background-color: indianred;
-    color: white;
+    box-shadow: 2px 2px 1px gray;
+    background-color: white;
+    color: black;
+}
+
+.entry{
+    box-sizing: border-box;
+    border-style: solid;
+    border-color:gray;
+    border-width: thin;
+    box-shadow: 1px 1px 1px #ccc;
+    margin:3px;
 }

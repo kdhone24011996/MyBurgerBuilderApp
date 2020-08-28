@@ -4,11 +4,14 @@ import Button from '../UI/Button/Button'
 
 const OrderSummary = (props)=>{
     
-    console.log("props.ingredients")
-   let summary = Object.keys(props.ingredients).map((igkey) =>{
+   let summary
+   if(props.ingredients){
+    summary = Object.keys(props.ingredients).map((igkey) =>{
     
         return <li key = {igkey} style = {{textAlign: "left"}}>{igkey}:{props.ingredients[igkey]}</li>
     })
+   }
+    
     return(
         <Auxiliary>
             <h3>Order Summary</h3>

@@ -20,7 +20,8 @@ const BuildControls = (props) =>(
 ))}
 <button className = {classes.OrderButton}
         disabled ={props.purchasable}
-        onClick={props.updateOrderSummaryShow}> Order Now</button>
+        onClick={props.updateOrderSummaryShow}>
+       {props.isAuthenticated?'Order Now':<span style ={{boxSizing: 'borderBox'}}>'LoginToOrder'</span>}</button>
     </div>
 
 )

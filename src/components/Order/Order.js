@@ -11,17 +11,19 @@ const Order =(props)=>{
             amount: props.ingredients[ingredientName],
         })
     }
-console.log(props.ingredients)
+
     const ingredientsOutput = ingredients.map((ig)=>{
-    return <span key ={ig.name}> {ig.name} ({ig.amount}) </span> 
+    return <span className={classes.entry} key ={ig.name}> {ig.name} ({ig.amount}) </span> 
          })
     return(
 <div className={classes.Order}>
     <p>Ingredients are : {ingredientsOutput}</p>
     <p>Price is :{props.price}</p>
+    <p>{props.date}</p>
 
 </div>
     )
 }
+
 
 export default Order

@@ -3,8 +3,8 @@ import classes from './Sidedrawer.module.css'
 import NavigationItoms from '../Navigation/NavigationItems/NavigationItoms'
 import Logo from '../Logo/Logo'
 import Auxiliary from '../../hoc/Auxiliary'
-import Backdrop from '../Burger/UI/Backdrop/Backdrop'
-import { checkPropTypes } from 'prop-types'
+
+
  
 const Sidedrawer = (props) =>{
 
@@ -12,11 +12,13 @@ const Sidedrawer = (props) =>{
     if(props.open){
         attachClasses = [classes.Sidedrawer, classes.open]
     }
-    console.log(props.open)
+    
+ 
+
     return(
         <Auxiliary>
-            <Backdrop show ={props.open} cancleShow ={props.close}/>
-        <div className = {attachClasses.join(' ')}>
+        <div className = {attachClasses.join(' ')}
+        onClick ={props.close}>
             <Logo height = '11%'/>
             <nav>
            <NavigationItoms/>

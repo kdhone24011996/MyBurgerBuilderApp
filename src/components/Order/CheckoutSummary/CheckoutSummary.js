@@ -1,7 +1,6 @@
 import React from 'react'
 import Burger from '../../Burger/Burger'
 import classes from './CheckoutSummary.module.css'
-import { checkPropTypes } from 'prop-types'
 import Button from '../../Burger/UI/Button/Button'
 
 const CheckoutSummary =(props)=>{

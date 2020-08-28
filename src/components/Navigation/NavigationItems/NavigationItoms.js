@@ -1,15 +1,28 @@
 import React from 'react'
 import classes from './NavigationItoms.module.css'
 import NavigationItom from './NavigationItom/NavigationItom'
+import { connect } from 'react-redux'
 
-const NavigationItoms = () =>(
-    <ul className ={classes.NavigationItoms}>
-       
-        <NavigationItom exact link ='/'>Build Your Burger</NavigationItom>
-        <NavigationItom  link ='/Orders'>Orders</NavigationItom>
+ const  NavigationItoms =(props)=>(
+     
+        <   ul className ={classes.NavigationItoms}>
+             <NavigationItom exact link ='/'>Build Your Burger</NavigationItom>
+            { props.isAuthenticated?<NavigationItom  link ='/orders'>Orders</NavigationItom>:null}
+             {!props.isAuthenticated?<NavigationItom link ='/signIn'>Login</NavigationItom>
+             :<NavigationItom link ='/logout'>Logout</NavigationItom>}      
+
+   </ul>
+         )
+     
+    
+
+const mapStateToProps =(state)=>{
+    return{
+
+        isAuthenticated : state.auth.tokenId
+    }
+    
+} 
 
 
-    </ul>
-)
-
-export default NavigationItoms
+export default connect(mapStateToProps)( NavigationItoms)

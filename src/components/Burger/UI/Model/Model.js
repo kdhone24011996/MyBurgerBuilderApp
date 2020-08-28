@@ -1,14 +1,14 @@
 import React from 'react'
 import classes from './Model.module.css'
 import Auxiliary from '../../../../hoc/Auxiliary'
-import Backdrop from '../Backdrop/Backdrop'
+
 
 const Model = (props) =>{
     return(
 
         <Auxiliary>
             
-           <Backdrop show={props.show} cancleShow = {props.cancleShow}/>
+           {/* <Backdrop show={props.show} cancleShow = {props.cancleShow}/> */}
 
     <div className = {classes.Modal}
          style={{

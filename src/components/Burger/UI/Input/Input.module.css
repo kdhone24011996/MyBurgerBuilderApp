@@ -2,6 +2,31 @@
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    
+    border: 2px #ccc;
+}
 
+.Label{
+font-weight: bold;
+box-sizing: border-box;
+margin-bottom: 8px;
+}
+
+.InputElement{
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 6px 10px;
+    font: inherit;
+    background-color: white;
+}
+
+.InputElement:focus{
+    background-color: rgb(240, 234, 221);
+    outline: none;
+}
+
+.Invalid{
+    
+    background-color: rgb(243, 194, 194);
+    border-color: red;
 }
